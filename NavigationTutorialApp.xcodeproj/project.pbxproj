@@ -13,6 +13,7 @@
 		9298DD632494D434009C4DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9298DD622494D434009C4DC2 /* Assets.xcassets */; };
 		9298DD662494D434009C4DC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9298DD652494D434009C4DC2 /* Preview Assets.xcassets */; };
 		9298DD692494D434009C4DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9298DD672494D434009C4DC2 /* LaunchScreen.storyboard */; };
+		9298DD712494D868009C4DC2 /* myapp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9298DD702494D868009C4DC2 /* myapp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9298DD652494D434009C4DC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9298DD682494D434009C4DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9298DD6A2494D434009C4DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9298DD702494D868009C4DC2 /* myapp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = myapp.jpg; path = ../../../../Desktop/myapp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9298DD5B2494D432009C4DC2 /* NavigationTutorialApp */ = {
 			isa = PBXGroup;
 			children = (
+				9298DD702494D868009C4DC2 /* myapp.jpg */,
 				9298DD5C2494D432009C4DC2 /* AppDelegate.swift */,
 				9298DD5E2494D432009C4DC2 /* SceneDelegate.swift */,
 				9298DD602494D432009C4DC2 /* ContentView.swift */,
@@ -136,6 +139,7 @@
 				9298DD692494D434009C4DC2 /* LaunchScreen.storyboard in Resources */,
 				9298DD662494D434009C4DC2 /* Preview Assets.xcassets in Resources */,
 				9298DD632494D434009C4DC2 /* Assets.xcassets in Resources */,
+				9298DD712494D868009C4DC2 /* myapp.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
