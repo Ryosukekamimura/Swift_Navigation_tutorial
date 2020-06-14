@@ -13,18 +13,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isFullScreen = false
-    
     var body: some View {
         NavigationView{
-            Button("Toggle Full Screen"){
-                self.isFullScreen.toggle()
-            }
-        .navigationBarTitle("Full Screen")
-        .navigationBarHidden(isFullScreen)
+            
+            Text("Hello World!")
+                .navigationBarTitle("Primary")
+            Text("Secondary")
         }
-            .statusBar(hidden: isFullScreen)
-}
+    .navigationViewStyle(StackNavigationViewStyle())
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
