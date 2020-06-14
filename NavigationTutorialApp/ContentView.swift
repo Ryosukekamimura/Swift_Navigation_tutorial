@@ -13,24 +13,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var score = 0
+    @State private var isFullScreen = false
     
     var body: some View {
         NavigationView{
-            Text("\(score)")
-                .navigationBarTitle("NavigationBarTitle")
-                .navigationBarItems(
-                    trailing:
-                        HStack{
-                            Button("Add 1"){
-                                self.score += 1
-                            }
-                            Button("Substract 1"){
-                                self.score -= 1
-                            }
-            
-        })
-    }
+            Button("Toggle Full Screen"){
+                self.isFullScreen.toggle()
+            }
+        .navigationBarTitle("Full Screen")
+        .navigationBarHidden(isFullScreen)
+        }
+            .statusBar(hidden: isFullScreen)
 }
 }
 
