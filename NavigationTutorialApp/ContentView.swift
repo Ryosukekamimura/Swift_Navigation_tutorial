@@ -8,29 +8,42 @@
 
 import SwiftUI
 
-struct Result: View{
-    var choice: String
+class User: ObservableObject{
+    //Userクラスにあるscore
+    @Published var score = 0
+}
+
+
+struct ChangeView: View {
+    @EnvironmentObject var user: User
     
     var body: some View{
-        Text("You chose \(choice)")
+        VStack{
+            Text("Score: \(user.score)")
+            Button("Increce"){
+                self.user.score += 1
+            }
+        }
     }
 }
 
 struct ContentView: View {
+    @ObservedObject var user = User()
+    
+    
     var body: some View {
         NavigationView{
             VStack(spacing: 30){
-                Text("Heads or Tiles")
+                Text("Score : \(user.score)")
+                NavigationLink(destination: ChangeView()){
+                    Text("Show details")
+                }
+
                 
-                NavigationLink(destination: Result(choice: "Heads")){
-                    Text("Heads")
-                }
-                NavigationLink(destination: Result(choice: "Tiles")){
-                    Text("Tiles")
-                }
-            }
-                .navigationBarTitle("NavigationBarTitle", displayMode: .large)
+
+            }.navigationBarTitle("NavigationBarTitle")
         }
+    .environmentObject(user)
 
     }
 }
